@@ -2,8 +2,8 @@
 import { Linkedin, Github, Globe, Instagram, Mail, Shield, Award, Zap, Hexagon, Layers, Radio, Users } from 'lucide-react';
 
 export const EVENT_DETAILS = {
-  date: "April 24 & 25*",
-  venue: "Science City*",
+  date: "April 24 & 25",
+  venue: "Science City",
   location: "Kolkata",
   status: "Coming Soon"
 };
@@ -181,8 +181,8 @@ export const TRUSTED_PARTNERS = {
       logoOverride: "https://static.wixstatic.com/media/fff29d_2e29c7e5a7a44f44b0b62ef767c28e76~mv2.png/v1/fill/w_678,h_112,al_c,lg_1,q_85,enc_avif,quality_auto/image_edited.png"
     },
     { name: "EC-Council", domain: "eccouncil.org", fallbackIcon: Shield, color: "text-red-500", logoOverride: "https://static.wixstatic.com/media/fff29d_4fff5de446f848b88cf4cf83a5510610~mv2.webp/v1/fill/w_542,h_176,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fff29d_4fff5de446f848b88cf4cf83a5510610~mv2.webp" },
-    { name: "EC-Council University", fallbackIcon: Award, color: "text-red-600" },
-    { name: "SquareX", fallbackIcon: Zap, color: "text-purple-500" },
+    { name: "EC-Council University", domain: "eccu.edu", fallbackIcon: Award, color: "text-red-600", logoOverride: "https://i.postimg.cc/HkL5YDLK/ECCU-new-2048x926.png" },
+    { name: "SquareX", domain: "sqrx.com", fallbackIcon: Zap, color: "text-purple-500", logoOverride: "https://i.postimg.cc/wjK8HHFT/images-(1).png" },
     { name: "b10s", domain: "b10s.com", fallbackIcon: Hexagon, logoOverride: "https://static.wixstatic.com/media/fff29d_6fcd5c6fe6a9410591f977c2fc10fe1b~mv2.png/v1/crop/x_0,y_341,w_1606,h_564/fill/w_678,h_238,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/dark-logo.png" },
     { name: "IoTSRG", fallbackIcon: Layers, logoOverride: "https://static.wixstatic.com/media/fff29d_684b0d98db8d4dfd91ef56bd314c4b26~mv2.png/v1/fill/w_574,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fff29d_684b0d98db8d4dfd91ef56bd314c4b26~mv2.png" },
   ],
@@ -198,16 +198,16 @@ export const TRUSTED_PARTNERS = {
     },
     { name: "ScriptKnack", fallbackIcon: Shield },
     { name: "Cyber2Labs", domain: "cyber2labs.com", fallbackIcon: Shield, logoOverride: "https://static.wixstatic.com/media/fff29d_56e40d2b8d2941fca8e0c81e81e310af~mv2.png/v1/crop/x_0,y_0,w_379,h_83/fill/w_531,h_111,al_c,lg_1,q_85,enc_avif,quality_auto/cyber2labs_edited.png" },
-    { name: "DestroSolutions", fallbackIcon: Shield },
+    { name: "DestroSolutions", fallbackIcon: Shield, logoOverride: "https://i.postimg.cc/8PLD7j7S/destro-solution-logo-white.png" },
   ],
   COMMUNITY: [
-    { name: "CISO MAG", domain: "cisomag.com", fallbackIcon: Radio, color: "text-red-500", logoOverride: "https://static.wixstatic.com/media/fff29d_059734a3f434430b8c81a01d107137a6~mv2.webp/v1/fill/w_700,h_238,al_c,lg_1,q_80,enc_avif,quality_auto/fff29d_059734a3f434430b8c81a01d107137a6~mv2.webp" },
-    { name: "GRID Sentry", fallbackIcon: Shield },
+    { name: "CISO MAG", domain: "cisomag.com", fallbackIcon: Radio, color: "text-red-500", logoOverride: "https://i.postimg.cc/3xQCYbv1/cisomag-8a-1.png" },
+    { name: "GRID Sentry", domain: "gridsentry.com", fallbackIcon: Shield },
     { name: "IICON", fallbackIcon: Hexagon },
-    { name: "SecurityBoat", fallbackIcon: Shield },
-    { name: "Seasides", fallbackIcon: Users },
-    { name: "Skillmate", fallbackIcon: Users },
-    { name: "AmynaSec", fallbackIcon: Shield },
+    { name: "SecurityBoat", domain: "securityboat.in", fallbackIcon: Shield },
+    { name: "Seasides", domain: "seasides.info", fallbackIcon: Users, logoOverride: "https://static.wixstatic.com/media/fff29d_9b0108943c4e49119977a6f83b43ab32~mv2.png/v1/fill/w_542,h_270,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fff29d_9b0108943c4e49119977a6f83b43ab32~mv2.png" },
+    { name: "Skillmate", domain: "skillmate.in", fallbackIcon: Users },
+    { name: "AmynaSec", domain: "amynasec.com", fallbackIcon: Shield },
     { name: "Seven Eight", fallbackIcon: Layers },
     { name: "UnoAcademy", fallbackIcon: Award },
   ]
