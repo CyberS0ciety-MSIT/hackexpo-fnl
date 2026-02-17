@@ -34,7 +34,7 @@ export default {
             },
             animation: {
                 'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                'ticker': 'ticker 20s linear infinite',
+                'ticker': 'ticker 60s linear infinite',
                 'spin-slow': 'spin 8s linear infinite',
                 'scan-fast': 'scan 3s linear infinite',
                 'glitch': 'glitch 1s linear infinite',

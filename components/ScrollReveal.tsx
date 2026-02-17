@@ -25,11 +25,11 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({ children, className 
           // Calculate delay: use prop if provided, otherwise add a tiny random factor
           // for a more organic, "glitchy" feel when multiple elements appear at once.
           const finalDelay = delay || Math.random() * 100;
-          
+
           setTimeout(() => {
             setIsVisible(true);
           }, finalDelay);
-          
+
           // Stop observing once the animation has been triggered
           if (ref.current) observer.unobserve(ref.current);
         }
@@ -51,8 +51,8 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({ children, className 
   }, [delay]);
 
   return (
-    <div 
-      ref={ref} 
+    <div
+      ref={ref}
       // Apply base 'hacker-reveal' class (defined in global CSS) and 'active' state
       className={`hacker-reveal ${isVisible ? 'active' : ''} ${className}`}
     >

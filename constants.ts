@@ -2,8 +2,8 @@
 import { Linkedin, Github, Globe, Instagram, Mail, Shield, Award, Zap, Hexagon, Layers, Radio, Users } from 'lucide-react';
 
 export const EVENT_DETAILS = {
-  date: "April 24 & 25*", 
-  venue: "Science City*", 
+  date: "April 24 & 25*",
+  venue: "Science City*",
   location: "Kolkata",
   status: "Coming Soon"
 };
@@ -76,7 +76,7 @@ export const SPEAKERS = [
     name: "Soumyadeep Basu",
     role: "Detection Engineer @ Google | OSEP | OSCP | AZ-500 | AWS Security Speciality",
     company: "Google",
-    image: null, 
+    image: null,
     linkedin: "https://www.linkedin.com/in/soumyadeep-bas/"
   },
   {
@@ -173,41 +173,41 @@ export const PARTNERS = [
 
 export const TRUSTED_PARTNERS = {
   SPECIAL: [
-    { 
-        name: "nasscom", 
-        domain: "nasscom.in", 
-        fallbackIcon: Globe, 
-        color: "text-orange-500",
-        logoOverride: "https://static.wixstatic.com/media/fff29d_2e29c7e5a7a44f44b0b62ef767c28e76~mv2.png/v1/fill/w_678,h_112,al_c,lg_1,q_85,enc_avif,quality_auto/image_edited.png"
+    {
+      name: "nasscom",
+      domain: "nasscom.in",
+      fallbackIcon: Globe,
+      color: "text-orange-500",
+      logoOverride: "https://static.wixstatic.com/media/fff29d_2e29c7e5a7a44f44b0b62ef767c28e76~mv2.png/v1/fill/w_678,h_112,al_c,lg_1,q_85,enc_avif,quality_auto/image_edited.png"
     },
     { name: "EC-Council", domain: "eccouncil.org", fallbackIcon: Shield, color: "text-red-500", logoOverride: "https://static.wixstatic.com/media/fff29d_4fff5de446f848b88cf4cf83a5510610~mv2.webp/v1/fill/w_542,h_176,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fff29d_4fff5de446f848b88cf4cf83a5510610~mv2.webp" },
-    { name: "EC-Council University", domain: "eccu.edu", fallbackIcon: Award, color: "text-red-600" },
-    { name: "SquareX", domain: "sqrx.com", fallbackIcon: Zap, color: "text-purple-500" },
-    { name: "b10s", domain: "b10s.com", fallbackIcon: Hexagon, logoOverride: "https://static.wixstatic.com/media/fff29d_6fcd5c6fe6a9410591f977c2fc10fe1b~mv2.png/v1/crop/x_0,y_341,w_1606,h_564/fill/w_678,h_238,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/dark-logo.png" }, 
-    { name: "IoTSRG", fallbackIcon: Layers, logoOverride: "https://static.wixstatic.com/media/fff29d_684b0d98db8d4dfd91ef56bd314c4b26~mv2.png/v1/fill/w_574,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fff29d_684b0d98db8d4dfd91ef56bd314c4b26~mv2.png" }, 
+    { name: "EC-Council University", fallbackIcon: Award, color: "text-red-600" },
+    { name: "SquareX", fallbackIcon: Zap, color: "text-purple-500" },
+    { name: "b10s", domain: "b10s.com", fallbackIcon: Hexagon, logoOverride: "https://static.wixstatic.com/media/fff29d_6fcd5c6fe6a9410591f977c2fc10fe1b~mv2.png/v1/crop/x_0,y_341,w_1606,h_564/fill/w_678,h_238,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/dark-logo.png" },
+    { name: "IoTSRG", fallbackIcon: Layers, logoOverride: "https://static.wixstatic.com/media/fff29d_684b0d98db8d4dfd91ef56bd314c4b26~mv2.png/v1/fill/w_574,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fff29d_684b0d98db8d4dfd91ef56bd314c4b26~mv2.png" },
   ],
   PLATFORM: [
     { name: "HackerOne", domain: "hackerone.com", fallbackIcon: Shield, logoOverride: "https://static.wixstatic.com/media/fff29d_359a7a80cabb4f3fbd22c6f3822304ad~mv2.png/v1/fill/w_618,h_134,al_c,lg_1,q_85,enc_avif,quality_auto/fff29d_359a7a80cabb4f3fbd22c6f3822304ad~mv2.png" },
     { name: "Tenable", domain: "tenable.com", fallbackIcon: Shield, logoOverride: "https://static.wixstatic.com/media/fff29d_6622b5775ef149ee93a7e88b2ebcd989~mv2.png/v1/fill/w_512,h_112,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Tenable-Logo2021_edited.png" },
     { name: "OffSec", domain: "offsec.com", fallbackIcon: Shield, logoOverride: "https://static.wixstatic.com/media/fff29d_2046a07e9bff448bb8cf16f2067ecbd3~mv2.png/v1/fill/w_536,h_176,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fff29d_2046a07e9bff448bb8cf16f2067ecbd3~mv2.png" },
-    { 
-      name: "DefHawk", 
-      domain: "defhawk.com", 
+    {
+      name: "DefHawk",
+      domain: "defhawk.com",
       fallbackIcon: Shield,
       logoOverride: "https://static.wixstatic.com/media/fff29d_1145cbce7c0842fb894cdbfb3473e6b6~mv2.png/v1/fill/w_718,h_144,al_c,lg_1,q_85,enc_avif,quality_auto/fff29d_1145cbce7c0842fb894cdbfb3473e6b6~mv2.png"
     },
-    { name: "ScriptKnack", domain: "scriptknack.com", fallbackIcon: Shield },
+    { name: "ScriptKnack", fallbackIcon: Shield },
     { name: "Cyber2Labs", domain: "cyber2labs.com", fallbackIcon: Shield, logoOverride: "https://static.wixstatic.com/media/fff29d_56e40d2b8d2941fca8e0c81e81e310af~mv2.png/v1/crop/x_0,y_0,w_379,h_83/fill/w_531,h_111,al_c,lg_1,q_85,enc_avif,quality_auto/cyber2labs_edited.png" },
     { name: "DestroSolutions", fallbackIcon: Shield },
   ],
   COMMUNITY: [
     { name: "CISO MAG", domain: "cisomag.com", fallbackIcon: Radio, color: "text-red-500", logoOverride: "https://static.wixstatic.com/media/fff29d_059734a3f434430b8c81a01d107137a6~mv2.webp/v1/fill/w_700,h_238,al_c,lg_1,q_80,enc_avif,quality_auto/fff29d_059734a3f434430b8c81a01d107137a6~mv2.webp" },
-    { name: "GRID Sentry", domain: "gridsentry.com", fallbackIcon: Shield },
+    { name: "GRID Sentry", fallbackIcon: Shield },
     { name: "IICON", fallbackIcon: Hexagon },
-    { name: "SecurityBoat", domain: "securityboat.in", fallbackIcon: Shield },
-    { name: "Seasides", domain: "seasides.info", fallbackIcon: Users },
-    { name: "Skillmate", domain: "skillmate.in", fallbackIcon: Users },
-    { name: "AmynaSec", domain: "amynasec.com", fallbackIcon: Shield },
+    { name: "SecurityBoat", fallbackIcon: Shield },
+    { name: "Seasides", fallbackIcon: Users },
+    { name: "Skillmate", fallbackIcon: Users },
+    { name: "AmynaSec", fallbackIcon: Shield },
     { name: "Seven Eight", fallbackIcon: Layers },
     { name: "UnoAcademy", fallbackIcon: Award },
   ]
@@ -261,7 +261,7 @@ export const MEMORIES = [
 export const NAV_ITEMS = [
   { label: "Home", href: "#home" },
   { label: "Speakers", href: "#speakers" },
-   { label: "CFP", href: "#cfp" },
+  { label: "CFP", href: "#cfp" },
   { label: "Memories", href: "#memories" },
   { label: "Contact", href: "#footer" },
 ];
