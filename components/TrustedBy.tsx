@@ -20,26 +20,28 @@ const PartnerCard: React.FC<{ partner: any; size?: 'lg' | 'md' }> = ({ partner, 
 
   // Determine which image source to use: explicit override or Clearbit fallback
   const imageSource = partner.logoOverride || (partner.domain ? getLogoUrl(partner.domain) : null);
+  const showLogo = imageSource && !imgError;
 
   return (
     <div className={`
       relative group flex flex-col items-center justify-center p-4 md:p-6 
-      bg-nothing-card/30 border border-white/5 hover:border-green-500/30 hover:bg-green-900/10 
+      ${showLogo ? 'bg-white shadow-xl' : 'bg-nothing-card/30 border border-white/5'} 
+      hover:border-green-500/50 hover:shadow-green-500/10
       transition-all duration-300 backdrop-blur-sm rounded-xl overflow-hidden
       ${size === 'lg' ? 'min-h-[140px]' : 'min-h-[100px]'}
     `}>
-      {/* Corner Accents - Green for "Trusted" */}
-      <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-white/20 group-hover:border-green-500/50 transition-colors"></div>
-      <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-white/20 group-hover:border-green-500/50 transition-colors"></div>
+      {/* Corner Accents */}
+      <div className={`absolute top-0 left-0 w-2 h-2 border-t border-l ${showLogo ? 'border-black/10' : 'border-white/20'} group-hover:border-green-500/50 transition-colors`}></div>
+      <div className={`absolute bottom-0 right-0 w-2 h-2 border-b border-r ${showLogo ? 'border-black/10' : 'border-white/20'} group-hover:border-green-500/50 transition-colors`}></div>
 
-      {imageSource && !imgError ? (
+      {showLogo ? (
         <img
           src={imageSource}
           alt={partner.name}
           onError={() => setImgError(true)}
           className={`
-            object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500
-            ${size === 'lg' ? 'h-12 md:h-20 w-auto max-w-full' : 'h-8 md:h-10 w-auto max-w-[80%]'}
+            object-contain transition-all duration-500 brightness-0 grayscale
+            ${size === 'lg' ? 'h-12 md:h-16 w-auto max-w-[90%]' : 'h-8 md:h-10 w-auto max-w-[85%]'}
           `}
         />
       ) : (

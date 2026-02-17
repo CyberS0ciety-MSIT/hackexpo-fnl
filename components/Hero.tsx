@@ -116,9 +116,9 @@ const Hero: React.FC = () => {
               <div className="relative animate-fade-in-up w-full flex justify-start">
                 {/* Background removed as requested */}
                 <img
-                  src="https://i.ibb.co/nMNCvNHg/Meow.png"
+                  src="https://i.postimg.cc/XqWY1FhK/New-Project-(2)-(2)-(2).png"
                   alt="HackExpo Logo"
-                  className="h-32 sm:h-40 md:h-56 lg:h-64 w-auto object-contain drop-shadow-[0_0_40px_rgba(165,243,252,0.6)] relative z-10"
+                  className="h-12 sm:h-40 md:h-56 lg:h-64 w-auto object-contain drop-shadow-[0_0_40px_rgba(165,243,252,0.6)] relative z-10"
                 />
               </div>
             ) : (
@@ -180,8 +180,8 @@ const Hero: React.FC = () => {
                   <div
                     key={index}
                     className={`absolute inset-0 flex items-center transition-all duration-500 transform ${index === langIndex
-                        ? 'opacity-100 translate-y-0'
-                        : 'opacity-0 translate-y-full'
+                      ? 'opacity-100 translate-y-0'
+                      : 'opacity-0 translate-y-full'
                       }`}
                   >
                     {/* Text with slight gradient for depth */}

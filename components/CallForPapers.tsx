@@ -13,7 +13,7 @@ const CallForPapers: React.FC = () => {
       <div className="max-w-5xl mx-auto px-6 relative z-10">
         <ScrollReveal>
           <div className="relative rounded-2xl border border-white/10 bg-nothing-card/50 backdrop-blur-md overflow-hidden p-8 md:p-12 text-center">
-            
+
             {/* Animated Gradient Border */}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-retro-cyan/10 to-transparent translate-x-[-100%] group-hover/cfp:animate-shimmer pointer-events-none"></div>
 
@@ -22,30 +22,30 @@ const CallForPapers: React.FC = () => {
                 <Sparkles className="w-3 h-3 text-retro-cyan" />
                 <span className="text-[10px] font-mono uppercase text-retro-cyan tracking-[0.2em] font-bold">Call For Papers</span>
               </div>
-              
+
               <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tighter">
                 <HackerText text="SHARE_YOUR_RESEARCH" />
               </h2>
-              
+
               <p className="text-retro-text/60 font-mono text-sm max-w-2xl mx-auto leading-relaxed mb-8">
-                We are looking for cutting-edge research, novel exploitation techniques, and case studies. 
+                We are looking for cutting-edge research, novel exploitation techniques, and case studies.
                 Submit your talk to be part of the most elite security conference in the region.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center gap-4">
-                 <a 
-                   href="https://docs.google.com/forms/d/e/1FAIpQLSeAloW07L7YCt1nU00iwOQd5ZvIfjJP2n6vgIqw-VuM5QRjMg/viewform" 
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   className="group relative px-8 py-4 rounded-full bg-retro-cyan text-nothing-black font-bold font-mono uppercase tracking-widest hover:bg-white transition-all shadow-[0_0_20px_rgba(165,243,252,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.6)]"
-                 >
-                    <span className="flex items-center gap-2">
-                       Submit Paper
-                       <ExternalLink className="w-4 h-4 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" />
-                    </span>
-                 </a>
-                 
-            
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeAloW07L7YCt1nU00iwOQd5ZvIfjJP2n6vgIqw-VuM5QRjMg/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative px-8 py-4 rounded-full bg-retro-cyan text-nothing-black font-bold font-mono uppercase tracking-widest hover:bg-white transition-all shadow-[0_0_20px_rgba(165,243,252,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.6)]"
+                >
+                  <span className="flex items-center gap-2">
+                    Submit Paper
+                    <ExternalLink className="w-4 h-4 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" />
+                  </span>
+                </a>
+
+
               </div>
             </div>
 

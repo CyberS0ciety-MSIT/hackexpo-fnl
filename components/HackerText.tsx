@@ -9,9 +9,9 @@ interface HackerTextProps {
   startOnView?: boolean;
 }
 
-export const HackerText: React.FC<HackerTextProps> = ({ 
-  text, 
-  className = "", 
+export const HackerText: React.FC<HackerTextProps> = ({
+  text,
+  className = "",
   scrambleSpeed = 30,
   revealDelay = 0,
   startOnView = true
@@ -43,40 +43,15 @@ export const HackerText: React.FC<HackerTextProps> = ({
   }, [revealDelay, startOnView]);
 
   useEffect(() => {
-    if (!isRevealed) {
-        // Initial state: random chars of same length
-        setDisplayText(text.split('').map(() => chars[Math.floor(Math.random() * chars.length)]).join(''));
-        return;
+    if (isRevealed) {
+      setDisplayText(text);
+    } else {
+      setDisplayText('');
     }
-
-    let interval: any;
-    let iteration = 0;
-    
-    interval = setInterval(() => {
-      setDisplayText(prev => 
-        text
-          .split("")
-          .map((letter, index) => {
-            if (index < iteration) {
-              return text[index];
-            }
-            return chars[Math.floor(Math.random() * chars.length)];
-          })
-          .join("")
-      );
-
-      if (iteration >= text.length) {
-        clearInterval(interval);
-      }
-      
-      iteration += 1 / 3; 
-    }, scrambleSpeed);
-
-    return () => clearInterval(interval);
-  }, [isRevealed, text, scrambleSpeed]);
+  }, [isRevealed, text]);
 
   return (
-    <span ref={elementRef} className={`${className}`}>
+    <span ref={elementRef} className={`${className} transition-opacity duration-500 ${isRevealed ? 'opacity-100' : 'opacity-0'}`}>
       {displayText}
     </span>
   );
