@@ -15,7 +15,7 @@ export default {
             colors: {
                 // 60% - Obsidian Black
                 nothing: {
-                    black: '#050505',
+                    black: '#0F172A',
                     dark: '#0A0A0A',
                     card: '#111111',
                     border: '#333333',

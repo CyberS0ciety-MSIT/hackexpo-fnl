@@ -7,7 +7,7 @@ import { ExternalLink } from 'lucide-react';
 // --- CONFIGURATION ---
 const CYBER_SOCIETY_LOGO = "https://cybersociety.growsoc.com/logo.png";
 const CRAC_LEARNING_LOGO = "https://static.wixstatic.com/media/fff29d_44391ca38d8841e29e97e94ff5b130d5~mv2.png/v1/crop/x_0,y_10,w_828,h_234/fill/w_314,h_98,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/CRACCon_edited.png";
-const MSIT_LOGO = "https://msit.edu.in/depy_uploads/header_components/meghnad-saha-institute-of-technology/meghnad-saha-institute-of-technology-primary-iFXQr0sa.jpg";
+const MSIT_LOGO = "https://i.postimg.cc/bJpN1KVd/Meghnad-Saha-Institute-of-Technology-Logo-svg.png";
 
 const Organizers: React.FC = () => {
   return (
@@ -24,7 +24,7 @@ const Organizers: React.FC = () => {
         <ScrollReveal>
           <div className="text-center mb-16 md:mb-24">
             <h2 className="text-xs md:text-base font-mono text-transparent bg-clip-text bg-gradient-to-r from-retro-cyan to-purple-400 tracking-[0.3em] uppercase mb-4 font-bold">
-              <HackerText text="POWERED_BY_ALLIANCE" speed={50} />
+              <HackerText text="POWERED BY ALLIANCE" speed={50} />
             </h2>
             <div className="relative inline-block">
               <h3 className="text-3xl md:text-5xl font-bold text-white tracking-tighter">
@@ -71,8 +71,8 @@ const Organizers: React.FC = () => {
                 <div className="w-12 h-1 bg-retro-cyan/30 mx-auto my-4 group-hover:w-24 transition-all duration-500 rounded-full"></div>
               </div>
 
-              <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-retro-cyan/30 group-hover:border-retro-cyan transition-colors rounded-tl-lg"></div>
-              <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-retro-cyan/30 group-hover:border-retro-cyan transition-colors rounded-br-lg"></div>
+              <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-purple-500/30 group-hover:border-purple-500 transition-colors rounded-tr-lg"></div>
+              <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-purple-500/30 group-hover:border-purple-500 transition-colors rounded-bl-lg"></div>
             </a>
           </ScrollReveal>
 

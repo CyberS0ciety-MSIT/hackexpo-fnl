@@ -15,7 +15,7 @@ interface Partner {
   logoOverride?: string;
 }
 
-const PartnerCard: React.FC<{ partner: any; size?: 'lg' | 'md' }> = ({ partner, size = 'md' }) => {
+const PartnerCard: React.FC<{ partner: any; size?: 'lg' | 'md'; isSpecial?: boolean }> = ({ partner, size = 'md', isSpecial = false }) => {
   const [imgError, setImgError] = useState(false);
 
   // Determine which image source to use: explicit override or Clearbit fallback
@@ -25,7 +25,7 @@ const PartnerCard: React.FC<{ partner: any; size?: 'lg' | 'md' }> = ({ partner, 
   return (
     <div className={`
       relative group flex flex-col items-center justify-center p-4 md:p-6 
-      ${showLogo ? 'bg-white shadow-xl' : 'bg-nothing-card/30 border border-white/5'} 
+      ${showLogo ? (isSpecial ? 'bg-[#1E293B] shadow-xl' : 'bg-white shadow-xl') : 'bg-nothing-card/30 border border-white/5'} 
       hover:border-green-500/50 hover:shadow-green-500/10
       transition-all duration-300 backdrop-blur-sm rounded-xl overflow-hidden
       ${size === 'lg' ? 'min-h-[140px]' : 'min-h-[100px]'}
@@ -40,7 +40,7 @@ const PartnerCard: React.FC<{ partner: any; size?: 'lg' | 'md' }> = ({ partner, 
           alt={partner.name}
           onError={() => setImgError(true)}
           className={`
-            object-contain transition-all duration-500 brightness-0 grayscale
+            object-contain transition-all duration-500 ${isSpecial ? 'brightness-110 saturate-110' : 'brightness-0 grayscale'}
             ${size === 'lg' ? 'h-12 md:h-16 w-auto max-w-[90%]' : 'h-8 md:h-10 w-auto max-w-[85%]'}
           `}
         />
@@ -61,7 +61,7 @@ const PartnerCard: React.FC<{ partner: any; size?: 'lg' | 'md' }> = ({ partner, 
 
 const TrustedBy: React.FC = () => {
   return (
-    <section className="py-20 md:py-32 bg-nothing-dark border-b border-nothing-border overflow-hidden relative z-20">
+    <section className="py-20 md:py-32 bg-nothing-black border-b border-nothing-border overflow-hidden relative z-20">
 
       {/* Radar Background Animation */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
@@ -76,61 +76,70 @@ const TrustedBy: React.FC = () => {
 
         {/* Section 1: Special Partners (Top Tier) */}
         <ScrollReveal>
-          <div className="text-center mb-10">
-            <div className="inline-block px-3 py-1 mb-4 border border-green-500/30 bg-green-500/5 rounded text-[10px] font-mono uppercase tracking-widest text-green-400">
-              Tier 01 // Clearance
+          <div className="bg-[#0F172A] p-8 md:p-12 rounded-3xl border border-white/5 relative overflow-hidden">
+            {/* Background Accent for Special Box */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-green-500/5 blur-[100px] -mr-32 -mt-32 rounded-full"></div>
+
+            <div className="text-center mb-10 relative z-10">
+              <div className="inline-block px-3 py-1 mb-4 border border-green-500/30 bg-green-500/5 rounded text-[10px] font-mono uppercase tracking-widest text-green-400">
+                Tier 01 // Clearance
+              </div>
+              <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                <HackerText text="SPECIAL PARTNERS" />
+              </h3>
             </div>
-            <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
-              <HackerText text="SPECIAL PARTNERS" />
-            </h3>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-            {TRUSTED_PARTNERS.SPECIAL.map((p, i) => (
-              <PartnerCard key={i} partner={p} size="lg" />
-            ))}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 relative z-10">
+              {TRUSTED_PARTNERS.SPECIAL.map((p, i) => (
+                <PartnerCard key={i} partner={p} size="lg" isSpecial={true} />
+              ))}
+            </div>
           </div>
         </ScrollReveal>
 
         {/* Section 2: Platform & Security (Middle Tier) */}
         <ScrollReveal delay={200}>
-          <div className="flex items-center gap-4 mb-8">
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent to-white/10"></div>
-            <h3 className="text-sm font-mono text-retro-text/60 uppercase tracking-widest">Security & Platforms</h3>
-            <div className="h-px flex-1 bg-gradient-to-l from-transparent to-white/10"></div>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            {TRUSTED_PARTNERS.PLATFORM.map((p, i) => (
-              <PartnerCard key={i} partner={p} />
-            ))}
+          <div className="bg-[#0F172A] p-8 md:p-12 rounded-3xl border border-white/5 relative overflow-hidden">
+            <div className="flex items-center gap-4 mb-8 relative z-10">
+              <div className="h-px flex-1 bg-gradient-to-r from-transparent to-white/10"></div>
+              <h3 className="text-sm font-mono text-retro-text/60 uppercase tracking-widest">Security & Platforms</h3>
+              <div className="h-px flex-1 bg-gradient-to-l from-transparent to-white/10"></div>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 relative z-10">
+              {TRUSTED_PARTNERS.PLATFORM.map((p, i) => (
+                <PartnerCard key={i} partner={p} isSpecial={true} />
+              ))}
+            </div>
           </div>
         </ScrollReveal>
 
         {/* Section 3: Media & Community (Lower Tier) */}
         <ScrollReveal delay={400}>
-          <div className="flex flex-col md:flex-row gap-8 md:gap-12">
+          <div className="bg-[#0F172A] p-8 md:p-12 rounded-3xl border border-white/5 relative">
+            <div className="flex flex-col md:flex-row gap-8 md:gap-12">
 
-            {/* Media Partner */}
-            <div className="flex-1">
-              <h3 className="text-xs font-mono text-retro-cyan uppercase tracking-widest mb-6 border-l-2 border-retro-cyan pl-3">
-                Media Partner
-              </h3>
-              <div className="grid grid-cols-1 gap-4">
-                <PartnerCard partner={TRUSTED_PARTNERS.COMMUNITY[0]} size="lg" />
+              {/* Media Partner */}
+              <div className="flex-1">
+                <h3 className="text-xs font-mono text-retro-cyan uppercase tracking-widest mb-6 border-l-2 border-retro-cyan pl-3">
+                  Media Partner
+                </h3>
+                <div className="grid grid-cols-1 gap-4">
+                  <PartnerCard partner={TRUSTED_PARTNERS.COMMUNITY[0]} size="lg" isSpecial={true} />
+                </div>
               </div>
-            </div>
 
-            {/* Community Partners */}
-            <div className="flex-[3]">
-              <h3 className="text-xs font-mono text-purple-400 uppercase tracking-widest mb-6 border-l-2 border-purple-400 pl-3">
-                Community Partners
-              </h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                {TRUSTED_PARTNERS.COMMUNITY.slice(1).map((p, i) => (
-                  <PartnerCard key={i} partner={p} />
-                ))}
+              {/* Community Partners */}
+              <div className="flex-[3]">
+                <h3 className="text-xs font-mono text-purple-400 uppercase tracking-widest mb-6 border-l-2 border-purple-400 pl-3">
+                  Community Partners
+                </h3>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                  {TRUSTED_PARTNERS.COMMUNITY.slice(1).map((p, i) => (
+                    <PartnerCard key={i} partner={p} isSpecial={true} />
+                  ))}
+                </div>
               </div>
-            </div>
 
+            </div>
           </div>
         </ScrollReveal>
 

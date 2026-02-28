@@ -24,7 +24,7 @@ const CallForPapers: React.FC = () => {
               </div>
 
               <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tighter">
-                <HackerText text="SHARE_YOUR_RESEARCH" />
+                <HackerText text="SHARE YOUR RESEARCH" />
               </h2>
 
               <p className="text-retro-text/60 font-mono text-sm max-w-2xl mx-auto leading-relaxed mb-8">

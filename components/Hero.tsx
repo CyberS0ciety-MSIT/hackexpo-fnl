@@ -116,7 +116,7 @@ const Hero: React.FC = () => {
               <div className="relative animate-fade-in-up w-full flex justify-start">
                 {/* Background removed as requested */}
                 <img
-                  src="https://i.postimg.cc/XqWY1FhK/New-Project-(2)-(2)-(2).png"
+                  src="https://i.postimg.cc/rpZ6h3QC/New-Project-(10)-(2).png"
                   alt="HackExpo Logo"
                   className="h-12 sm:h-40 md:h-56 lg:h-64 w-auto object-contain drop-shadow-[0_0_40px_rgba(165,243,252,0.6)] relative z-10"
                 />

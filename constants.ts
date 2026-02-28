@@ -217,44 +217,44 @@ export const MEMORIES = [
   {
     id: 1,
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop',
-    title: 'CTF Finals 2024',
-    desc: 'The final showdown'
+    src: 'https://i.postimg.cc/L8qjYZGg/1760503954601.jpg',
+    title: 'Threat Analysis by Nischay Hegde',
+    desc: 'Craccon 25'
   },
   {
     id: 2,
-    type: 'video',
-    src: 'https://cdn.coverr.co/videos/coverr-typing-on-a-hacker-keyboard-2666/1080p.mp4',
-    title: 'Live Hacking',
-    desc: 'Red Team in action'
+    type: 'image',
+    src: 'https://i.postimg.cc/Bb6nB7hy/489365992_1101190598706082_5413732514286978927_n.jpg',
+    title: 'Prize Distribution',
+    desc: 'HackExpo 24'
   },
   {
     id: 3,
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop',
-    title: 'Workshops',
-    desc: 'Knowledge transfer'
+    src: 'https://i.postimg.cc/RZ3w6n23/1760504801888.jpg',
+    title: 'Speech by Nischay Hegde',
+    desc: 'Craccon 25'
   },
   {
     id: 4,
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1470&auto=format&fit=crop',
-    title: 'Networking',
-    desc: 'Community building'
+    src: 'https://i.postimg.cc/9Q4yRqs9/1761032057011.jpg',
+    title: 'Conference Highlights',
+    desc: 'Craccon 25'
   },
   {
     id: 5,
-    type: 'video',
-    src: 'https://cdn.coverr.co/videos/coverr-server-room-2848/1080p.mp4',
-    title: 'Infrastructure',
-    desc: 'Behind the scenes'
+    type: 'image',
+    src: 'https://i.postimg.cc/KjwHX3WN/1760074425559.jpg',
+    title: 'Cyber Leadership',
+    desc: 'Craccon 25'
   },
   {
     id: 6,
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop',
-    title: 'Code Review',
-    desc: 'Finding vulnerabilities'
+    src: 'https://i.postimg.cc/9Q4yRqs7/488221578_1101190345372774_6765544589663242975_n.jpg',
+    title: 'Panel Discussion',
+    desc: 'HackExpo 24'
   }
 ];
 
