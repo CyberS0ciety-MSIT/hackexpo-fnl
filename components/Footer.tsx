@@ -154,7 +154,6 @@ const Footer: React.FC = () => {
                 The interface for the next generation of security professionals.
               </p>
               <div className="flex gap-4">
-<<<<<<< HEAD
                 {/* Discord */}
                 <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-[#5865F2] hover:border-[#5865F2] hover:bg-[#5865F2]/10 transition-all duration-300 group/icon">
                   <span className="sr-only">Discord</span>
@@ -178,9 +177,6 @@ const Footer: React.FC = () => {
                     <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
                   </svg>
                 </a>
-=======
-
->>>>>>> test2
               </div>
             </div>
 
