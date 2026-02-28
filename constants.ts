@@ -196,12 +196,17 @@ export const TRUSTED_PARTNERS = {
       fallbackIcon: Shield,
       logoOverride: "https://static.wixstatic.com/media/fff29d_1145cbce7c0842fb894cdbfb3473e6b6~mv2.png/v1/fill/w_718,h_144,al_c,lg_1,q_85,enc_avif,quality_auto/fff29d_1145cbce7c0842fb894cdbfb3473e6b6~mv2.png"
     },
+<<<<<<< HEAD
     { name: "ScriptKnack", fallbackIcon: Shield },
+=======
+    { name: "ScriptKnack", fallbackIcon: Shield, logoOverride: "https://i.postimg.cc/fy9WRd1H/scriptknacklogo1-1708086302255-Photoroom-(1)-(1).png" },
+>>>>>>> test2
     { name: "Cyber2Labs", domain: "cyber2labs.com", fallbackIcon: Shield, logoOverride: "https://static.wixstatic.com/media/fff29d_56e40d2b8d2941fca8e0c81e81e310af~mv2.png/v1/crop/x_0,y_0,w_379,h_83/fill/w_531,h_111,al_c,lg_1,q_85,enc_avif,quality_auto/cyber2labs_edited.png" },
     { name: "DestroSolutions", fallbackIcon: Shield, logoOverride: "https://i.postimg.cc/8PLD7j7S/destro-solution-logo-white.png" },
   ],
   COMMUNITY: [
     { name: "CISO MAG", domain: "cisomag.com", fallbackIcon: Radio, color: "text-red-500", logoOverride: "https://i.postimg.cc/3xQCYbv1/cisomag-8a-1.png" },
+<<<<<<< HEAD
     { name: "GRID Sentry", domain: "gridsentry.com", fallbackIcon: Shield },
     { name: "IICON", fallbackIcon: Hexagon },
     { name: "SecurityBoat", domain: "securityboat.in", fallbackIcon: Shield },
@@ -210,6 +215,16 @@ export const TRUSTED_PARTNERS = {
     { name: "AmynaSec", domain: "amynasec.com", fallbackIcon: Shield },
     { name: "Seven Eight", fallbackIcon: Layers },
     { name: "UnoAcademy", fallbackIcon: Award },
+=======
+    { name: "GRID Sentry", domain: "gridsentry.com", fallbackIcon: Shield, logoOverride: "https://i.postimg.cc/nr2xz10G/images-Photoroom.png" },
+    { name: "IICON", fallbackIcon: Hexagon, logoOverride: "https://i.postimg.cc/zftc2c3n/iicon-logo-new.png" },
+    { name: "SecurityBoat", domain: "securityboat.in", fallbackIcon: Shield, logoOverride: "https://i.postimg.cc/QM2yrWkx/Security-Boat-(1).png" },
+    { name: "Seasides", domain: "seasides.info", fallbackIcon: Users, logoOverride: "https://static.wixstatic.com/media/fff29d_9b0108943c4e49119977a6f83b43ab32~mv2.png/v1/fill/w_542,h_270,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fff29d_9b0108943c4e49119977a6f83b43ab32~mv2.png" },
+    { name: "Skillmate", domain: "skillmate.in", fallbackIcon: Users, logoOverride: "https://i.postimg.cc/6QcXWc3k/Skillmate.png" },
+    { name: "AmynaSec", domain: "amynasec.com", fallbackIcon: Shield, logoOverride: "https://i.postimg.cc/MZNYfCrk/images-(1)-(2).png" },
+    { name: "Seven Eight", fallbackIcon: Layers, logoOverride: "https://i.postimg.cc/XqmZ2465/Seven-eight.png" },
+    { name: "UnoAcademy", fallbackIcon: Award, logoOverride: "https://i.postimg.cc/sxR9TYPD/hqgje.png" },
+>>>>>>> test2
   ]
 };
 
