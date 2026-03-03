@@ -204,7 +204,7 @@ export const TRUSTED_PARTNERS = {
     { name: "CISO MAG", domain: "cisomag.com", fallbackIcon: Radio, color: "text-red-500", logoOverride: "https://i.postimg.cc/3xQCYbv1/cisomag-8a-1.png" },
     { name: "GRID Sentry", domain: "gridsentry.com", fallbackIcon: Shield, logoOverride: "https://i.postimg.cc/nr2xz10G/images-Photoroom.png" },
     { name: "IICON", fallbackIcon: Hexagon, logoOverride: "https://i.postimg.cc/zftc2c3n/iicon-logo-new.png" },
-    { name: "SecurityBoat", domain: "securityboat.in", fallbackIcon: Shield, logoOverride: "https://i.postimg.cc/QM2yrWkx/Security-Boat-(1).png" },
+    { name: "SecurityBoat", domain: "securityboat.in", fallbackIcon: Shield, logoOverride: "https://i.postimg.cc/QM2yrWkx/Security-Boat-(1).png", logoScale: 1.4, invertToWhite: true },
     { name: "Seasides", domain: "seasides.info", fallbackIcon: Users, logoOverride: "https://static.wixstatic.com/media/fff29d_9b0108943c4e49119977a6f83b43ab32~mv2.png/v1/fill/w_542,h_270,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fff29d_9b0108943c4e49119977a6f83b43ab32~mv2.png" },
     { name: "Skillmate", domain: "skillmate.in", fallbackIcon: Users, logoOverride: "https://i.postimg.cc/6QcXWc3k/Skillmate.png" },
     { name: "AmynaSec", domain: "amynasec.com", fallbackIcon: Shield, logoOverride: "https://i.postimg.cc/MZNYfCrk/images-(1)-(2).png" },

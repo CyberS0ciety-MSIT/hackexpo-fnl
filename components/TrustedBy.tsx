@@ -25,22 +25,33 @@ const PartnerCard: React.FC<{ partner: any; size?: 'lg' | 'md'; isSpecial?: bool
   return (
     <div className={`
       relative group flex flex-col items-center justify-center p-4 md:p-6 
-      ${showLogo ? (isSpecial ? 'bg-[#1E293B] shadow-xl' : 'bg-white shadow-xl') : 'bg-nothing-card/30 border border-white/5'} 
-      hover:border-green-500/50 hover:shadow-green-500/10
+      ${showLogo ? (isSpecial ? 'bg-[#1a2744] shadow-xl border border-white/10' : 'bg-white shadow-xl') : 'bg-nothing-card/30 border border-white/5'} 
+      hover:border-green-500/50 hover:shadow-green-500/10 hover:shadow-lg
       transition-all duration-300 backdrop-blur-sm rounded-xl overflow-hidden
       ${size === 'lg' ? 'min-h-[140px]' : 'min-h-[100px]'}
     `}>
+      {/* Subtle inner glow for dark cards */}
+      {showLogo && isSpecial && (
+        <div className="absolute inset-0 bg-gradient-to-br from-white/[0.04] via-transparent to-white/[0.02] pointer-events-none"></div>
+      )}
       {/* Corner Accents */}
-      <div className={`absolute top-0 left-0 w-2 h-2 border-t border-l ${showLogo ? 'border-black/10' : 'border-white/20'} group-hover:border-green-500/50 transition-colors`}></div>
-      <div className={`absolute bottom-0 right-0 w-2 h-2 border-b border-r ${showLogo ? 'border-black/10' : 'border-white/20'} group-hover:border-green-500/50 transition-colors`}></div>
+      <div className={`absolute top-0 left-0 w-2 h-2 border-t border-l ${showLogo ? 'border-white/15' : 'border-white/20'} group-hover:border-green-500/50 transition-colors`}></div>
+      <div className={`absolute bottom-0 right-0 w-2 h-2 border-b border-r ${showLogo ? 'border-white/15' : 'border-white/20'} group-hover:border-green-500/50 transition-colors`}></div>
 
       {showLogo ? (
         <img
           src={imageSource}
           alt={partner.name}
           onError={() => setImgError(true)}
+          style={partner.logoScale ? { transform: `scale(${partner.logoScale})` } : undefined}
           className={`
-            object-contain transition-all duration-500 ${isSpecial ? 'brightness-110 saturate-110' : 'brightness-0 grayscale'}
+            object-contain transition-all duration-500 
+            ${isSpecial
+              ? (partner.invertToWhite
+                ? 'brightness-0 invert drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]'
+                : 'brightness-200 contrast-125 drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]')
+              : 'brightness-0 grayscale'}
+            group-hover:brightness-[2.5] group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.4)]
             ${size === 'lg' ? 'h-12 md:h-16 w-auto max-w-[90%]' : 'h-8 md:h-10 w-auto max-w-[85%]'}
           `}
         />
