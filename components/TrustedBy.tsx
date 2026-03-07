@@ -24,7 +24,7 @@ const PartnerCard: React.FC<{ partner: any; size?: 'lg' | 'md'; isSpecial?: bool
 
   return (
     <div className={`
-      relative group flex flex-col items-center justify-center p-4 md:p-6 
+      relative group flex flex-col items-center justify-center p-3 md:p-4 
       ${showLogo ? (isSpecial ? 'bg-[#1a2744] shadow-xl border border-white/10' : 'bg-white shadow-xl') : 'bg-nothing-card/30 border border-white/5'} 
       hover:border-green-500/50 hover:shadow-green-500/10 hover:shadow-lg
       transition-all duration-300 backdrop-blur-sm rounded-xl overflow-hidden
@@ -52,7 +52,7 @@ const PartnerCard: React.FC<{ partner: any; size?: 'lg' | 'md'; isSpecial?: bool
                 : 'brightness-200 contrast-125 drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]')
               : 'brightness-0 grayscale'}
             group-hover:brightness-[2.5] group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.4)]
-            ${size === 'lg' ? 'h-12 md:h-16 w-auto max-w-[90%]' : 'h-8 md:h-10 w-auto max-w-[85%]'}
+            ${size === 'lg' ? 'h-16 md:h-20 w-auto max-w-[85%]' : 'h-10 md:h-14 w-auto max-w-[80%]'}
           `}
         />
       ) : (
