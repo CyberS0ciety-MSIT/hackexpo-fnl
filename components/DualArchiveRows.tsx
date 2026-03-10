@@ -61,12 +61,7 @@ const ArchiveCard: React.FC<ArchiveCardProps & { onClick: () => void }> = ({ ite
 
                     {/* Info */}
                     <div className="absolute inset-0 z-10 p-4 flex flex-col justify-end">
-                        <div className="flex items-center gap-2 mb-1">
-                            {item.type === 'video' && <Film size={12} className="text-retro-cyan" />}
-                            <span className="text-[10px] font-mono text-retro-cyan tracking-widest uppercase">
-                                {item.type === 'image' ? 'IMG_ARCHIVE' : 'VID_ARCHIVE'}
-                            </span>
-                        </div>
+                        {/* Removed the IMG_ARCHIVE / VID_ARCHIVE label block */}
                         <h3 className="text-sm font-bold text-white font-mono truncate">{item.title}</h3>
                         <p className="text-[10px] text-retro-text/60 font-mono mt-0.5 line-clamp-1">{item.desc}</p>
                     </div>
@@ -234,7 +229,7 @@ const DualArchiveRows: React.FC = () => {
     const bottomItems = useMemo(() => MEMORIES.filter((_, i) => i % 2 !== 0), []);
 
     return (
-        <div className={`w-full py-10 ${isMobile ? 'space-y-6' : 'space-y-[60px]'}`}>
+        <div className={`w-full py-10 ${isMobile ? 'space-y-4' : 'space-y-6'}`}>
             <div className="relative">
                 <ArchiveRow items={topItems} direction="left" onItemClick={(item) => setSelectedItem(item)} />
             </div>

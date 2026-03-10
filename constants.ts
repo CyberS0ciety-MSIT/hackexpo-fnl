@@ -37,7 +37,7 @@ export const CYBER_SOCIETY_LINKS = [
     name: "cybersociety88@gmail.com",
     url: "mailto:cybersociety88@gmail.com",
     icon: Mail,
-    color: "hover:text-retro-cyan"
+    color: "hover:text-blue-700"
   }
 ];
 
@@ -70,7 +70,7 @@ export const CRAC_LINKS = [
     name: "support@crac-learning.com",
     url: "mailto:support@crac-learning.com",
     icon: Mail,
-    color: "hover:text-green-400"
+    color: "hover:text-blue-700"
   }
 ];
 
@@ -107,7 +107,7 @@ export const ADVISORY = [
     name: "Iftekhar Hussain",
     role: "Principal Product Manager",
     company: "Microsoft",
-    image: "https://media.licdn.com/dms/image/v2/D5603AQF9A5sUmQy_hQ/profile-displayphoto-shrink_200_200/B56ZXqjsOjGQAY-/0/1743396980375?e=1773878400&v=beta&t=etSlBsOhPUTnd21vo9zcIKkA1lCfVFqwp-3c3OQcNsI",
+    image: "https://i.postimg.cc/mZFdH31t/1743396980375.jpg",
     linkedin: "https://www.linkedin.com/in/iftekharh/"
   },
   {
@@ -123,15 +123,23 @@ export const ADVISORY = [
     name: "Kevin Cardwell",
     role: "President@Cyber2Labs | Served as leader of a DoD Red Team",
     company: "Cyber2Labs",
-    image: "https://media.licdn.com/dms/image/v2/C4E03AQGPz5CWqpGHrw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1534387282294?e=1773878400&v=beta&t=VhUldD_WBtMx_MvtcUMPCZr8z3z_Aph8BYfa3WG2xkQ",
+    image: "https://i.postimg.cc/TPJ9QbSc/1534387282319.jpg",
     linkedin: "https://www.linkedin.com/in/kevin-cardwell-6102891/"
   },
   {
     id: 4,
     name: "Sh. Sushil Kumar",
     role: "Senior Consultant @ Central University | NIOS | (OsD) NitK",
-    company: "",
+    company: "Central University",
     image: "https://i.postimg.cc/43hmhbFR/Whats-App-Image-2026-03-03-at-15-02-18.jpg"
+  },
+  {
+    id: 5,
+    name: "Rakesh Seal",
+    role: "Senior SDE (R&D-3) at Keysight ATI | Automation Enthusiast",
+    company: "Keysight ATI",
+    image: "https://i.postimg.cc/1zJXmNrW/rakesh.jpg",
+    linkedin: "https://www.linkedin.com/in/rakeshseal0?utm_source=share_via&utm_content=profile&utm_medium=member_android"
   }
 ];
 
@@ -159,6 +167,14 @@ export const REVIEW_BOARD = [
     company: "CRAC LEARNING, DefHawk",
     image: "https://i.postimg.cc/YChhqLQk/image.png",
     linkedin: "https://www.linkedin.com/in/swatil/"
+  },
+  {
+    id: 4,
+    name: "Shayak Tarafdar",
+    role: "Senior Engineering Manager, Quick Heal/Seqrite",
+    company: "Quick Heal",
+    image: "https://i.postimg.cc/NfcKxYFT/Whats-App-Image-2026-03-10-at-4-47-30-PM.jpg",
+    linkedin: "https://www.linkedin.com/in/shayak-tarafdar-38951214?utm_source=share_via&utm_content=profile&utm_medium=member_android"
   }
 ];
 

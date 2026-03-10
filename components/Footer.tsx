@@ -109,8 +109,8 @@ const Footer: React.FC = () => {
                 </p>
               </div>
 
-              <div className="w-full md:w-auto min-w-[320px] relative z-10">
-                <div className="flex items-center gap-2 p-1.5 bg-white/5 border border-white/10 rounded-xl focus-within:border-retro-cyan/50 focus-within:bg-white/10 transition-all duration-300">
+              <div className="w-full md:w-auto relative z-10">
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 p-1.5 bg-[rgba(255,255,255,0.05)] border border-white/10 rounded-xl focus-within:border-retro-cyan/50 focus-within:bg-white/10 transition-all duration-300">
                   <input
                     type="email"
                     placeholder="enter_email_address..."
@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
                     value={emailInput}
                     onChange={(e) => setEmailInput(e.target.value)}
                   />
-                  <button className="px-6 py-3 bg-retro-cyan text-nothing-black font-bold uppercase text-xs tracking-wider rounded-lg hover:bg-white transition-colors flex items-center gap-2 group/btn">
+                  <button className="px-6 py-3 bg-retro-cyan text-nothing-black font-bold uppercase text-xs tracking-wider rounded-lg hover:bg-white transition-colors flex justify-center items-center gap-2 group/btn shrink-0">
                     <span>Inject</span>
                     <ArrowRight className="w-3 h-3 group-hover/btn:translate-x-1 transition-transform" />
                   </button>

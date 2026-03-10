@@ -7,7 +7,7 @@ import DualArchiveRows from './DualArchiveRows';
 
 const Memories: React.FC = () => {
   return (
-    <section id="memories" className="py-20 md:py-32 relative overflow-hidden bg-nothing-black border-b border-nothing-border group/section">
+    <section id="memories" className="pt-20 md:pt-32 pb-4 relative overflow-hidden bg-nothing-black border-b border-nothing-border group/section">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-dot-pattern opacity-10 pointer-events-none animate-slow-pan"></div>
 

@@ -99,7 +99,7 @@ const TrustedBy: React.FC = () => {
                 <HackerText text="PAST PARTNERS" />
               </h3>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 relative z-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 relative z-10">
               {TRUSTED_PARTNERS.SPECIAL.map((p, i) => (
                 <PartnerCard key={i} partner={p} size="lg" isSpecial={true} />
               ))}
@@ -115,7 +115,7 @@ const TrustedBy: React.FC = () => {
               <h3 className="text-sm font-mono text-retro-text/60 uppercase tracking-widest">Security & Platforms</h3>
               <div className="h-px flex-1 bg-gradient-to-l from-transparent to-white/10"></div>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 relative z-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 relative z-10">
               {TRUSTED_PARTNERS.PLATFORM.map((p, i) => (
                 <PartnerCard key={i} partner={p} isSpecial={true} />
               ))}
@@ -143,7 +143,7 @@ const TrustedBy: React.FC = () => {
                 <h3 className="text-xs font-mono text-purple-400 uppercase tracking-widest mb-6 border-l-2 border-purple-400 pl-3">
                   Community Partners
                 </h3>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                   {TRUSTED_PARTNERS.COMMUNITY.slice(1).map((p, i) => (
                     <PartnerCard key={i} partner={p} isSpecial={true} />
                   ))}

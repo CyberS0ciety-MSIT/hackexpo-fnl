@@ -9,7 +9,7 @@ import Organizers from './components/Organizers';
 import Advisory from './components/Advisory';
 import ReviewBoard from './components/ReviewBoard';
 import Speakers from './components/Speakers';
-import Partners from './components/Partners';
+// import Partners from './components/Partners';
 import Tickets from './components/Tickets';
 import Memories from './components/Memories';
 import FlowTeamSection from './components/FlowTeamSection';
@@ -52,7 +52,7 @@ function App() {
 
           <CallForPapers />
 
-          <Partners />
+          {/* <Partners /> */}
 
           <Tickets />
 
