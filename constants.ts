@@ -98,6 +98,14 @@ export const SPEAKERS = [
     company: "EY",
     image: "https://static.wixstatic.com/media/fff29d_10497f3c77e24895b0bce6941a0c29ab~mv2.jpg/v1/crop/x_35,y_0,w_729,h_909/fill/w_574,h_716,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/image_edited.jpg",
     linkedin: "https://www.linkedin.com/in/kasturi-behera-1986a8116/"
+  },
+  {
+    id: 4,
+    name: "Avishek Sarkar",
+    role: "Senior Security Engineer | Offensive Security",
+    company: "Cloudflare",
+    image: "https://i.postimg.cc/Nj37d98C/1718535689104.jpg",
+    linkedin: "https://www.linkedin.com/in/avisheksarkar7/"
   }
 ];
 
@@ -276,6 +284,8 @@ export const TRUSTED_PARTNERS = {
     { name: "AmynaSec", domain: "amynasec.com", fallbackIcon: Shield, logoOverride: "https://i.postimg.cc/MZNYfCrk/images-(1)-(2).png" },
     { name: "Seven Eight", fallbackIcon: Layers, logoOverride: "https://i.postimg.cc/XqmZ2465/Seven-eight.png" },
     { name: "UnoAcademy", fallbackIcon: Award, logoOverride: "https://i.postimg.cc/sxR9TYPD/hqgje.png" },
+    { name: "OWSAP KOLKATA", fallbackIcon: Layers, logoOverride: "https://i.postimg.cc/28nRSvHT/Whats-App-Image-2026-03-14-at-4-19-03-PM.jpg" },
+    { name: "NULL KOLKATA", fallbackIcon: Award, logoOverride: "https://i.postimg.cc/KjP2wgw9/Whats-App-Image-2026-03-14-at-4-19-04-PM.jpg" },
   ]
 };
 
