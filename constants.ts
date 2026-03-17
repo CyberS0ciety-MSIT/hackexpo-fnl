@@ -2,7 +2,7 @@
 import { Linkedin, Github, Globe, Instagram, Mail, Shield, Award, Zap, Hexagon, Layers, Radio, Users, Twitter, X } from 'lucide-react';
 
 export const EVENT_DETAILS = {
-  date: "April 24th & 25th",
+  date: "To be announced soon",
   venue: "Science City",
   location: "Kolkata",
   status: "CFP Release – 9 March (10:30–11:00 AM), submission deadline 1st April"
